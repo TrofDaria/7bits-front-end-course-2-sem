@@ -1,0 +1,17 @@
+.header {
+    background-image: linear-gradient(154deg, #96efc0 0%, #96efc0 100%);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.header__content {
+    box-sizing: border-box;
+    max-width: 960px;
+    margin-left: 75px;
+}
+
+.header__logo {
+    text-decoration: none;
+}

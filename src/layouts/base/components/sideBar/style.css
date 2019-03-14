@@ -1,0 +1,25 @@
+.side-bar {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.options_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.options_list__item {
+    padding: 0;
+    margin: 25px 0 0;
+    text-align: center;
+}
+
+.options_list__item-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #979797;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+}
