@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 15" width="12" height="15">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-1253 -102L113 -102L113 568L-1253 568Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #979797 } 
+	</style>
+	<g id="TO DO" clip-path="url(#cp1)">
+		<g id="TO DO">
+			<g id="tasks">
+				<g id="task 1">
+					<path id="delete" class="shp0" d="M10.21,4.11v9.33c0,0.86 -0.7,1.56 -1.57,1.56h-6.28c-0.87,0 -1.57,-0.7 -1.57,-1.56v-9.33zM7.46,1l0.79,0.78h1.96c0.43,0 0.79,0.35 0.79,0.78v0.78h-11v-0.78c0,-0.43 0.35,-0.78 0.78,-0.78h1.97l0.78,-0.78z" />
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" width="15" height="15">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-199 -497L1101 -497L1101 803L-199 803Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #979797 } 
+		.shp1 { fill: #43cda3 } 
+	</style>
+	<g id="UI kit" clip-path="url(#cp1)">
+		<g id="UI kit">
+			<g id="Tasks">
+				<g id="hover circle">
+					<g id="task 1">
+						<path id="Oval" class="shp0" d="M1,7c0,3.31 2.69,6 6,6c3.31,0 6,-2.69 6,-6c0,-3.31 -2.69,-6 -6,-6c-3.31,0 -6,2.69 -6,6z" />
+						<path id="Oval Copy 8" class="shp1" d="M3,7c0,2.21 1.79,4 4,4c2.21,0 4,-1.79 4,-4c0,-2.21 -1.79,-4 -4,-4c-2.21,0 -4,1.79 -4,4z" />
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

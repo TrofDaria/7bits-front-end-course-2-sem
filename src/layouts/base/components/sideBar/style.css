@@ -15,6 +15,16 @@
     text-align: center;
 }
 
+.options_list__to-do::before{
+    content: url("images/Combined Shape.svg");
+    margin-right: 10px;
+}
+
+.options_list__done::before{
+    content: url("images/Shape.svg");
+    margin-right: 10px;
+}
+
 .options_list__item-link {
     text-decoration: none;
     text-transform: capitalize;

@@ -1,5 +1,5 @@
 .header {
-    background-image: linear-gradient(154deg, #96efc0 0%, #96efc0 100%);
+    background-image: linear-gradient(154deg, #96efc0 0%, #73baff 100%);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
     height: 60px;
     display: flex;
@@ -8,10 +8,24 @@
 
 .header__content {
     box-sizing: border-box;
-    max-width: 960px;
-    margin-left: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header__logo {
+    display: inline-block;
     text-decoration: none;
+    margin-left: 75px;
+}
+
+.header__user-name{
+    display: inline-block;
+    margin-right: 75px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Roboto", serif;
+    font-weight: 500;
 }

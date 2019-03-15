@@ -10,10 +10,10 @@ export default class SideBar extends React.Component {
         return (
             <aside className={`side-bar${className ? ` ${className}` : ''}`}>
                 <ul className='options_list'>
-                    <li className='options_list__item'>
+                    <li className='options_list__item options_list__to-do'>
                         <a className='options_list__item-link' href='/'>To do</a>
                     </li>
-                    <li className='options_list__item'>
+                    <li className='options_list__item options_list__done'>
                         <a className='options_list__item-link' href='/'>Done</a>
                     </li>
                 </ul>

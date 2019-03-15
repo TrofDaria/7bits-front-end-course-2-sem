@@ -1,0 +1,7 @@
+.option-edit {
+    background-image: url("images/pencil.svg");
+}
+
+.option-edit:hover{
+    background-image: url("images/pencil_blue.svg");
+}

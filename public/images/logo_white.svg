@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121 26" width="121" height="26">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-71 -17L1295 -17L1295 653L-71 653Z" />
+		</clipPath>
+		<image width="122" height="26" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAAaCAMAAABPc7iMAAAAAXNSR0IB2cksfwAAASNQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Rb17eAAAAGF0Uk5TALRp4h1ifa0ee94hbbmAntkmEM/2lpn/It3WKY9EqVG7EVXSLfLMLuxNiGaqM3fOMVTu0TWg8Mlg8Vhb1OtW4e8l2mFPjFyJdvRkQPtnywzz/HP1Ow09jflwi9uxFeUkC/dA2kkAAAJcSURBVHiczZT5d5QwEMdj11q1HlXXHaJiCbpYgUSN11atVnt4X/W+/f//CjOTAAG2+J7vlTU/kBBm8mG+MxPG/p+xb25W5MH++QOzIS8cZGz+0CzIhxfxeWQGcR9dtPOx432Tl07Y+eSp4elqdwRuBJ3OvDADPuVr0O1+5mxBBhiem4bmEO4J+rxHBhgsV+jIrQSHuOPX0XS0y5dO9IWLPnlckj30X8e/oZNLPnnlsn9eiQYUPMAMpALfM6NyLtto3E9if2XRCXBjraDmdeWqTx5fq4VSQwtNCU2YPQNAB54poVOb87iwMCtC58CNbVT3un7DLW7i9i2fXJZZaNEK/UM8zjwyPClvoAXtJ7ivQaFFQugUtIlV4iEBh9S63IaJR169w7rRTqyUoBJ0E01rhZWuC4JBp3QEor1aRZEnVcx3a+RWrlGwyATjlPMb3gkuVNFkIc4qJLRNkk0CV9bn3hAsm8hr9+vkFprF5Cx2RQte9bdQaKUIXUggFRqQdIMHZDkh8vqkQW6iM2WcTK6UE7xuiugYdGgFD5SiMDWis5ikDlXMigp5+IitlDfR+kaT3ETnkAiLDjEcJqPQM0V0huUbRAYtqeAcOjD/arRSVGwWvbnF2NCR17Zb5OoiDQktddkcromiBjrQpeDON7Vok4mciaRsPfb4iXmM6fXpsza5iWYSN0aU3yzBimkKboQwd0ZGNYBp5VlxpUjUiYrQSrXwnDn2i5dTyHs5Xr2m6Q283emZPPfuPWMfPu58+vylZ7KJdvXrt+T71nL2o2/0T1ja/NU31A35e0bgP9V1Ybzxw8ygAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="TO DO" clip-path="url(#cp1)">
+		<g id="TO DO">
+			<g id="header">
+				<use id="logo_white" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+			</g>
+		</g>
+	</g>
+</svg>

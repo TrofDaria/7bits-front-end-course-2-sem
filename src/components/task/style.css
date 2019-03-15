@@ -1,19 +1,70 @@
-.task{
+.task {
     width: calc(77vw - 60px);
-    box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
     background-color: #ffffff;
     margin-bottom: 5px;
     padding: 15px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.task__title{
+.task:hover {
+    box-shadow: 0px 1px 4px #97e3cc;
+}
+
+.task:hover .task-options__option-button{
+    display: inline-block;
+}
+
+.task-check{
+    width: 15px;
+    height: 15px;
+    background: url("images/V.svg") no-repeat center;
+}
+
+.task__title {
+    display: inline-block;
     font-size: 15px;
     color: #303030;
     font-family: "Roboto", serif;
     font-weight: 300;
-    margin: 0;
+    margin: 0 0 0 15px;
 }
 
 .task:first-child {
     margin-top: 25px;
+}
+
+.task-options{
+    margin: 0;
+    padding: 0;
+}
+
+.task-options__option {
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.task-options__option:last-child{
+    margin-right: 0;
+}
+
+.task-options__option-button{
+    display: none;
+    text-decoration: none;
+    margin: 0;
+    width: 15px;
+    height: 15px;
+    background: transparent no-repeat center;
+    border: none;
+}
+
+.option-delete {
+    background-image: url("images/delete.svg");
+}
+
+.option-delete:hover{
+    background-image: url("images/delete_red.svg");
 }
