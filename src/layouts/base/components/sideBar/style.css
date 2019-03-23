@@ -15,21 +15,57 @@
     text-align: center;
 }
 
-.options_list__to-do::before{
+.options_list__to-do .options_list__link::before{
     content: url("images/Combined Shape.svg");
     margin-right: 10px;
 }
 
-.options_list__done::before{
+.options_list__done .options_list__link::before{
     content: url("images/Shape.svg");
     margin-right: 10px;
 }
 
-.options_list__item-link {
+.options_list__to-do .options_list__link:hover::before {
+    content: url("images/Combined Shape_dark.svg");
+}
+.options_list__done .options_list__link:hover::before {
+    content: url("images/Shape_dark.svg");
+}
+
+.options_list__link {
     text-decoration: none;
     text-transform: capitalize;
     font-size: 18px;
     color: #979797;
     font-family: "Roboto", serif;
     font-weight: 400;
+}
+
+.options_list__link:hover{
+    color: #838383;
+}
+
+.options_list__link-active{
+    color: #78c2f5;
+    font-weight: 500;
+}
+
+.options_list__link-active:hover{
+    color: #78c2f5;
+    font-weight: 500;
+}
+
+.options_list__done .options_list__link-active::before{
+    content: url("images/Shape_blue.svg");
+}
+.options_list__done .options_list__link-active:hover::before{
+    content: url("images/Shape_blue.svg");
+}
+
+.options_list__to-do .options_list__link-active::before{
+    content: url("images/Combined Shape_blue.svg");
+}
+
+.options_list__to-do .options_list__link-active:hover::before{
+    content: url("images/Combined Shape_blue.svg");
 }
