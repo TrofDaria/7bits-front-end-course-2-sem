@@ -17,12 +17,6 @@
     display: inline-block;
 }
 
-.task-check{
-    width: 15px;
-    height: 15px;
-    background: url("images/V.svg") no-repeat center;
-}
-
 .task__title {
     display: inline-block;
     font-size: 15px;
@@ -49,22 +43,4 @@
 
 .task-options__option:last-child{
     margin-right: 0;
-}
-
-.task-options__option-button{
-    display: none;
-    text-decoration: none;
-    margin: 0;
-    width: 15px;
-    height: 15px;
-    background: transparent no-repeat center;
-    border: none;
-}
-
-.option-delete {
-    background-image: url("images/delete.svg");
-}
-
-.option-delete:hover{
-    background-image: url("images/delete_red.svg");
 }
