@@ -12,32 +12,32 @@ export default class Task extends React.Component {
             <article className="task">
                 <div>
                     {this.select()}
-                <p className="task__title">{this.props.title}</p>
+                    <p className="task__title">{this.props.title}</p>
                 </div>
                 <ul className="task-options">
                     <li className='task-options__option'>
                         {this.edit()}
-                        </li>
+                    </li>
                     <li className='task-options__option'>
-                        <Button iconClassName={"button-delete"}/>
+                        <Button taskId={this.props.id} iconClassName={"button-delete"}/>
                     </li>
                 </ul>
             </article>
         );
     };
 
-    select=()=>{
-        if(this.props.completed){
+    select = () => {
+        if (this.props.completed) {
             return <Icon src={"./images/check_mark.svg"}/>;
         }
-        return <Button iconClassName={"button-complete"}/>;
+        return <Button taskId={this.props.id} iconClassName={"button-complete"}/>;
     };
 
-    edit=()=>{
-        if(this.props.completed){
+    edit = () => {
+        if (this.props.completed) {
             return '';
         }
-        return <Button  iconClassName={"button-edit"}/>;
+        return <Button taskId={this.props.id} iconClassName={"button-edit"}/>;
     };
 };
 
