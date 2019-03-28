@@ -21,8 +21,8 @@
 }
 
 .button-complete {
-    background: url("images/O.svg");
+    background: url("images/checkbox.svg");
 }
 .button-complete:hover{
-    background: url("images/O_blue.svg");
+    background: url("images/checkbox_blue.svg");
 }

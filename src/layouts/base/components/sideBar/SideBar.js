@@ -11,28 +11,28 @@ export default class SideBar extends React.Component {
         return (
             <aside className={`side-bar${className ? ` ${className}` : ''}`}>
                 <nav className='side-bar__menu'>
-                    <ul className='options_list'>
-                        <li className='options_list__item options_list__to-do'>
+                    <ul className='options-list'>
+                        <li className='options-list__item options-list__item_to-do'>
                             <NavLink exact
-                                className='options_list__link'
-                                to={("/")}
-                                activeClassName={'options_list__link-active'}>
+                                     className='options-list__link'
+                                     to={"/"}
+                                     activeClassName={'options-list__link_active'}>
                                 To do
-                        </NavLink>
-                    </li>
-                    <li className='options_list__item options_list__done'>
-                        <NavLink
-                            className='options_list__link'
-                            to={("/done")}
-                            activeClassName={'options_list__link-active'}>
-                            Done
-                        </NavLink>
-                    </li>
-                </ul>
-            </nav>
-    </aside>
-    )
-        ;
+                            </NavLink>
+                        </li>
+                        <li className='options-list__item options-list__item_done'>
+                            <NavLink
+                                className='options-list__link'
+                                to={"/done"}
+                                activeClassName={'options-list__link_active'}>
+                                Done
+                            </NavLink>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+        )
+            ;
     };
 };
 

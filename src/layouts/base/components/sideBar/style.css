@@ -3,36 +3,40 @@
     margin-right: 80px;
 }
 
-.options_list {
+.options-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.options_list__item {
+.options-list__item {
     padding: 0;
     margin: 25px 0 0;
     text-align: center;
+    position: relative;
 }
 
-.options_list__to-do .options_list__link::before{
-    content: url("images/Combined Shape.svg");
-    margin-right: 10px;
+.options-list__item_to-do .options-list__link::before {
+    content: url("images/tasks.svg");
+    position: absolute;
+    right: 50px;
 }
 
-.options_list__done .options_list__link::before{
-    content: url("images/Shape.svg");
-    margin-right: 10px;
+.options-list__item_done .options-list__link::before {
+    content: url("images/done.svg");
+    position:absolute;
+    right: 50px;
 }
 
-.options_list__to-do .options_list__link:hover::before {
-    content: url("images/Combined Shape_dark.svg");
-}
-.options_list__done .options_list__link:hover::before {
-    content: url("images/Shape_dark.svg");
+.options-list__item_to-do .options-list__link:hover::before {
+    content: url("images/tasks_dark.svg");
 }
 
-.options_list__link {
+.options-list__item_done .options-list__link:hover::before {
+    content: url("images/done_dark.svg");
+}
+
+.options-list__link {
     text-decoration: none;
     text-transform: capitalize;
     font-size: 18px;
@@ -41,31 +45,32 @@
     font-weight: 400;
 }
 
-.options_list__link:hover{
+.options-list__link:hover {
     color: #838383;
 }
 
-.options_list__link-active{
+.options-list__link_active {
     color: #78c2f5;
     font-weight: 500;
 }
 
-.options_list__link-active:hover{
+.options-list__link_active:hover {
     color: #78c2f5;
     font-weight: 500;
 }
 
-.options_list__done .options_list__link-active::before{
-    content: url("images/Shape_blue.svg");
-}
-.options_list__done .options_list__link-active:hover::before{
-    content: url("images/Shape_blue.svg");
+.options-list__item_done .options-list__link_active::before {
+    content: url("images/done_blue.svg");
 }
 
-.options_list__to-do .options_list__link-active::before{
-    content: url("images/Combined Shape_blue.svg");
+.options-list__item_done .options-list__link_active:hover::before {
+    content: url("images/done_blue.svg");
 }
 
-.options_list__to-do .options_list__link-active:hover::before{
-    content: url("images/Combined Shape_blue.svg");
+.options-list__item_to-do .options-list__link_active::before {
+    content: url("images/tasks_blue.svg");
+}
+
+.options-list__item_to-do .options-list__link_active:hover::before {
+    content: url("images/tasks_blue.svg");
 }

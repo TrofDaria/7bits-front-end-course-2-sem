@@ -28,7 +28,7 @@ export default class Task extends React.Component {
 
     select=()=>{
         if(this.props.completed){
-            return <Icon src={"./images/V.svg"}/>;
+            return <Icon src={"./images/check_mark.svg"}/>;
         }
         return <Button iconClassName={"button-complete"}/>;
     };
@@ -37,11 +37,12 @@ export default class Task extends React.Component {
         if(this.props.completed){
             return '';
         }
-        return <Button iconClassName={"button-edit"}/>;
+        return <Button  iconClassName={"button-edit"}/>;
     };
 };
 
 Task.propTypes = {
+    id: PropTypes.number,
     title: PropTypes.string,
     completed: PropTypes.bool
 };
@@ -50,3 +51,5 @@ Task.defaultProps = {
     title: '',
     completed: true
 };
+
+
