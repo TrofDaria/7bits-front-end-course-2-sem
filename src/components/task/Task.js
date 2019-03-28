@@ -28,7 +28,6 @@ export default class Task extends React.Component {
 
     select = () => {
         if (this.props.completed) {
-            return <Icon src={"./images/check_mark.svg"}/>;
         }
         return <Button taskId={this.props.id} iconClassName={"button-complete"}/>;
     };
