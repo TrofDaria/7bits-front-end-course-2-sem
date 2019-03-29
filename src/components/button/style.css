@@ -1,9 +1,33 @@
-.task__button{
+.button{
     text-decoration: none;
     padding: 0;
+    border: none;
+}
+
+.form__button{
+    width: 130px;
+    height: 30px;
+    border-radius: 15px;
+    padding-right: 25px;
+    text-align: right;
+    background: url("images/plus.svg") #bdbdbd no-repeat 9% center;
+    font-size: 15px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.form__button_active{
+    background-color: #50d5ad;
+}
+
+.button-add{
+
+}
+
+.task__button{
     width: 15px;
     height: 15px;
-    border: none;
     background: no-repeat center;
 }
 .button-edit {

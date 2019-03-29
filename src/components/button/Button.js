@@ -9,11 +9,15 @@ export default class Button extends React.Component {
         this.processButtonClick = this.processButtonClick.bind(this);
     }
     render() {
+        const{taskId, iconClassName, className, disabled, type, value}=this.props;
         return (
             <button onClick={() => {
-                this.processButtonClick(this.props.taskId)
-            }}
-                    className={`task__button ${this.props.iconClassName}`}>
+                this.processButtonClick(taskId)}}
+                    className={`button ${className} ${iconClassName}`}
+                    type={type}
+                    disabled={disabled}
+            >
+                {value}
             </button>
         );
     };
@@ -24,5 +28,17 @@ export default class Button extends React.Component {
 
 Button.propTypes = {
     taskId: PropTypes.number,
+    value: PropTypes.string,
+    type: PropTypes.string,
+    className: PropTypes.string,
+    disabled: PropTypes.bool,
     iconClassName: PropTypes.string
+};
+
+Button.defaultProps = {
+    value: '',
+    type: 'button',
+    className: '',
+    disabled: false,
+    iconClassName: ''
 };

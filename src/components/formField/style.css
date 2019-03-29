@@ -1,0 +1,13 @@
+.form-field{
+    font-size: 15px;
+    color: #353535;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    width: 400px;
+    border: none;
+    border-bottom: 1.3px solid #45d3a8;;
+    -webkit-appearance: none;
+}
+.form-field::placeholder{
+    color: #939393;
+}

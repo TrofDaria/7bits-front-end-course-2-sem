@@ -19,7 +19,9 @@ export default class Task extends React.Component {
                         {this.edit()}
                     </li>
                     <li className='task-options__option'>
-                        <Button taskId={this.props.id} iconClassName={"button-delete"}/>
+                        <Button taskId={this.props.id}
+                                className={"task__button"}
+                                iconClassName={"button-delete"}/>
                     </li>
                 </ul>
             </article>
@@ -28,15 +30,20 @@ export default class Task extends React.Component {
 
     select = () => {
         if (this.props.completed) {
+            return <Icon src={"./images/check_mark.svg"}/>
         }
-        return <Button taskId={this.props.id} iconClassName={"button-complete"}/>;
+        return <Button taskId={this.props.id}
+                       className={"task__button"}
+                       iconClassName={"button-complete"}/>;
     };
 
     edit = () => {
         if (this.props.completed) {
             return '';
         }
-        return <Button taskId={this.props.id} iconClassName={"button-edit"}/>;
+        return <Button taskId={this.props.id}
+                       className={"task__button"}
+                       iconClassName={"button-edit"}/>;
     };
 };
 
