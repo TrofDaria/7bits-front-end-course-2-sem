@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import Task from '../../components/task/Task';
 
@@ -6,9 +7,16 @@ import list from '../todo/list';
 
 import './style.css';
 
-export default class Done extends React.Component {
-    renderList = () => {
-        return list.data.map((item, index) => {
+class Done extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            itemList: list.data
+        };
+    };
+
+    renderList = (itemList) => {
+        return itemList.map((item, index) => {
             return (
                 <Task key={index} id={item.id} title={item.title} completed={true}/>
             );
@@ -18,8 +26,13 @@ export default class Done extends React.Component {
     render() {
         return (
             <React.Fragment>
-                {this.renderList()}
+                {this.renderList(this.state.itemList)}
             </React.Fragment>
         );
     };
 };
+
+const mapStateToProps = (state) => ({
+});
+
+export default connect(mapStateToProps, null)(Done);

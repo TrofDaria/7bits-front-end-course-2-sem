@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import Task from '../../components/task/Task';
 import FormField from '../../components/formField/FormField';
@@ -8,7 +9,7 @@ import list from './list';
 
 import './style.css';
 
-export default class ToDo extends React.Component {
+class ToDo extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -75,11 +76,7 @@ export default class ToDo extends React.Component {
         );
     };
 };
-/*
-*
-2. В рамках занятия вам нужно выполнить следующее:
-2.1.
-Доработать страницу To do добавив на страницу форму по добавлению
-новой задачи (см. ​ макет​ ). Обратите внимание на ​ UI kit​ , где указано
-состояние кнопки добавления в случае когда поле ввода не заполнено.
-* */
+
+const mapStateToProps = (state) => ({ });
+
+export default connect(mapStateToProps, null)(ToDo);
