@@ -4,7 +4,7 @@ import Task from '../../components/task/Task';
 import FormField from '../../components/formField/FormField';
 import Button from '../../components/button/Button';
 
-import list from '../list';
+import list from './list';
 
 import './style.css';
 

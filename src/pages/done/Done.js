@@ -2,7 +2,7 @@ import React from 'react';
 
 import Task from '../../components/task/Task';
 
-import list from '../list';
+import list from '../todo/list';
 
 import './style.css';
 

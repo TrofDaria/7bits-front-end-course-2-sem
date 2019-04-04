@@ -15,17 +15,22 @@ export default class Task extends React.Component {
                     <p className="task__title">{this.props.title}</p>
                 </div>
                 <ul className="task-options">
-                    <li className='task-options__option'>
+                    <li className='task-options__option tasks-options__option_edit'>
                         {this.edit()}
                     </li>
-                    <li className='task-options__option'>
+                    <li className='task-options__option tasks-options__option_delete'>
                         <Button taskId={this.props.id}
                                 className={"task__button"}
-                                iconClassName={"button-delete"}/>
+                                iconClassName={"button-delete"}
+                                onPress={this.processButtonClick}
+                        />
                     </li>
                 </ul>
             </article>
         );
+    };
+    processButtonClick(id) {
+        alert(id);
     };
 
     select = () => {
@@ -34,7 +39,9 @@ export default class Task extends React.Component {
         }
         return <Button taskId={this.props.id}
                        className={"task__button"}
-                       iconClassName={"button-complete"}/>;
+                       iconClassName={"button-complete"}
+                       onPress={this.processButtonClick}
+        />;
     };
 
     edit = () => {
@@ -43,7 +50,9 @@ export default class Task extends React.Component {
         }
         return <Button taskId={this.props.id}
                        className={"task__button"}
-                       iconClassName={"button-edit"}/>;
+                       iconClassName={"button-edit"}
+                       onPress={this.processButtonClick}
+        />;
     };
 };
 

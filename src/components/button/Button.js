@@ -4,15 +4,11 @@ import PropTypes from 'prop-types';
 import './style.css';
 
 export default class Button extends React.Component {
-    constructor(props) {
-        super(props);
-        this.processButtonClick = this.processButtonClick.bind(this);
-    }
     render() {
-        const{taskId, iconClassName, className, disabled, type, value}=this.props;
+        const{taskId, iconClassName, className, disabled, type, value, onPress}=this.props;
         return (
             <button onClick={() => {
-                this.processButtonClick(taskId)}}
+                onPress(taskId)}}
                     className={`button ${className} ${iconClassName}`}
                     type={type}
                     disabled={disabled}
@@ -20,9 +16,6 @@ export default class Button extends React.Component {
                 {value}
             </button>
         );
-    };
-    processButtonClick(id) {
-        alert(id);
     };
 };
 
@@ -32,7 +25,8 @@ Button.propTypes = {
     type: PropTypes.string,
     className: PropTypes.string,
     disabled: PropTypes.bool,
-    iconClassName: PropTypes.string
+    iconClassName: PropTypes.string,
+    onPress: PropTypes.func
 };
 
 Button.defaultProps = {
@@ -40,5 +34,6 @@ Button.defaultProps = {
     type: 'button',
     className: '',
     disabled: false,
-    iconClassName: ''
+    iconClassName: '',
+    onPress: ()=>{}
 };

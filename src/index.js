@@ -16,3 +16,7 @@ ReactDOM.render(
     </BrowserRouter>,
     document.getElementById('root')
 );
+/*
+Сейчас у вас в компоненте Task есть флаг completed. А если появится статус inProgress, а потом readyToReview, а
+потом еще 10 разных статусов, то что будете делать?
+*/
