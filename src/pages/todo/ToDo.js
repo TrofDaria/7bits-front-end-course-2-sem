@@ -1,25 +1,39 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
 
 import Task from '../../components/task/Task';
 import FormField from '../../components/formField/FormField';
 import Button from '../../components/button/Button';
 
-import list from './list';
+import getTaskList from '../../actions/taskList/getTaskList';
 
 import './style.css';
 
 class ToDo extends React.Component {
+
+    componentDidMount(){
+         this.props.getTaskList();
+
+    }
+    componentDidUpdate(prevProps){
+        if (prevProps.itemList.length !== this.props.itemList.length){
+            this.setState({
+                itemList: this.props.itemList
+            });
+        }
+    }
+
     constructor(props) {
         super(props);
         this.state = {
             value: '',
             submitAllowed: false,
-            itemList: list.data
+            itemList: []
         };
     };
 
-    onChange=(event)=>{
+    onChange = (event) => {
         console.log(this.state.itemList);
         this.setState({
             value: event.target.value,
@@ -27,20 +41,20 @@ class ToDo extends React.Component {
         });
     };
 
-    onSubmit=(event)=>{
+    onSubmit = (event) => {
         event.preventDefault();
         this.setState({
             value: '',
             submitAllowed: false,
-            itemList:[
-                {"id": (this.state.itemList).length, "title": this.state.value },
+            itemList: [
+                {"id": (this.state.itemList).length, "title": this.state.value},
                 ...this.state.itemList
             ]
         })
     };
 
-    submitButtonClassName=()=>{
-        if(this.state.submitAllowed){
+    submitButtonClassName = () => {
+        if (this.state.submitAllowed) {
             return "form__button form__button_active";
         } else return "form__button"
     };
@@ -75,8 +89,13 @@ class ToDo extends React.Component {
             </React.Fragment>
         );
     };
-};
+}
 
-const mapStateToProps = (state) => ({ });
+const mapDispatchToProps = (dispatch) => ({
+    getTaskList: bindActionCreators(getTaskList, dispatch)
+});
+const mapStateToProps = (state) => ({
+   itemList: state.taskListReducer.taskList
+});
 
-export default connect(mapStateToProps, null)(ToDo);
+export default connect(mapStateToProps, mapDispatchToProps)(ToDo);

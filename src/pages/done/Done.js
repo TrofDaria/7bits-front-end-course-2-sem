@@ -1,19 +1,16 @@
 import React from 'react';
-import { connect } from 'react-redux';
-
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
 import Task from '../../components/task/Task';
 
-import list from '../todo/list';
-
 import './style.css';
+import getTaskList from "../../actions/taskList/getTaskList";
 
 class Done extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            itemList: list.data
-        };
-    };
+
+    componentDidMount() {
+        this.props.getTaskList();
+    }
 
     renderList = (itemList) => {
         return itemList.map((item, index) => {
@@ -26,13 +23,16 @@ class Done extends React.Component {
     render() {
         return (
             <React.Fragment>
-                {this.renderList(this.state.itemList)}
+                {this.renderList(this.props.itemList)}
             </React.Fragment>
         );
     };
-};
+}
 
+const mapDispatchToProps = (dispatch) => ({
+        getTaskList: bindActionCreators(getTaskList, dispatch)
+    });
 const mapStateToProps = (state) => ({
-});
-
-export default connect(mapStateToProps, null)(Done);
+        itemList: state.taskListReducer.taskList
+    });
+export default connect(mapStateToProps, mapDispatchToProps)(Done);
